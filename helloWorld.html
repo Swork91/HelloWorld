@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Turn on the lights!</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<!--external JavaScript-->
+<script src="js/basicScript.js"></script>
+<script src="js/BulbScript.js"></script>
+<script>
+function myFunction() {
+    document.getElementById("myImage").src = "imgs/pic_bulbon.gif";
+}
+</script>
+<!--JavaScript in HTML-->
+<button onclick=myFunction()>Turn on the light using functions</button>
+<!-- Images stored somewheres-->
+<img id="myImage" src="imgs/pic_bulboff.gif" style="width:100px">
+
+<button onclick="bulbOff()">Turn off the light with functions... in another file!</button>
+
+</body>
+</html>

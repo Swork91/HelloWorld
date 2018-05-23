@@ -2,19 +2,25 @@
 <html>
 <body>
 
-<h2>Turn on the lights!</h2>
+<h1>Turn on the lights!</h1>
+<h2>Headder size 2</h2>
 
-<p>JavaScript can change HTML attribute values.</p>
+<p id = "paragraph1Text">paragraph</p>
+
 <!--external JavaScript-->
 <script src="js/basicScript.js"></script>
 <script src="js/BulbScript.js"></script>
 <script>
+var test = "Oh no I'm blind!!!";
 function myFunction() {
     document.getElementById("myImage").src = "imgs/pic_bulbon.gif";
+    document.getElementById("paragraph1Text").innerHTML = test;
 }
 </script>
+
 <!--JavaScript in HTML-->
 <button onclick=myFunction()>Turn on the light using functions</button>
+
 <!-- Images stored somewheres-->
 <img id="myImage" src="imgs/pic_bulboff.gif" style="width:100px">
 
